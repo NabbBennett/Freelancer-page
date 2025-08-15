@@ -259,9 +259,17 @@ header {
   background: #fff;
   border-bottom: 2px solid #111;
   padding: 1rem 0;
-  margin: auto;
+  
 }
 
+.contact iframe{
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 80%;
+}
+
+/*
 .contact-me{
   max-width: 1000px;
   width: 80%;
@@ -391,6 +399,9 @@ header {
     background-color: #000000;
     color: white;
 }
+*/
+
+/* Footer */
 
 footer {
   display: flex;
