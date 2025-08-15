@@ -1,83 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <a>Mi portafolio</a>
+                </ul>
+            </nav>    
+            <div class="about-me">
+                <div>
+                    <h1>Hola!.<br>Soy Nadia Cortes</h1>
+                        <div class="info-me">
+                            <p>│ ↳  20 años<br>
+                               │ ↳  Próxima Ingeniera de Sistemas<br>
+                               │ ↳  Estudiando en la Benemerita Universidad Autonoma de Puebla</p>
+                        </div>
+                        <button class="about-me-button">Ver más</button>
+                </div>
+                <img src="Resources\Compu.png" alt="Tenna" class="AM-img">
+            </div>
 
-</html><!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Portafolio Retro</title>
-  <link rel="stylesheet" href="CSS/estilo.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo"></div>
-      <ul>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Learn</a></li>
-        <li><a href="#">Clone me</a></li>
-        <li><a href="#">Find me</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <div>
-        <h1>Hello.<br>I'm Mac.</h1>
-        <p>I'm a free retro WebFlow template made by <a href="#">Mackenzie Child</a>.</p>
-        <button>Clone me on WebFlow</button>
-      </div>
-      <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/computer-2025844_1280.png" alt="Retro Computer" class="hero-img">
-    </div>
-  </header>
-  <section class="quick-links">
-    <h2>Quick links</h2>
-    <div class="links-row">
-      <a href="#">Blog <span>→</span></a>
-      <a href="#">Projects <span>→</span></a>
-      <a href="#">About <span>→</span></a>
-      <a href="#">Contact <span>→</span></a>
-    </div>
-  </section>
-  <main>
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="project-cards">
-        <div class="project-card">
-          <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80');"></div>
-          <div class="project-content">
-            <h3>Possimus</h3>
-            <p>Officia sit numquam fugiat sint molestiae id. Est modi est at debitis dolorem...</p>
-            <button>View project</button>
-          </div>
+            <section class="indice">
+                <h2>Índice</h2>
+                    <div class="indice-row">
+                        <a href="projects"><span class="text">Proyectos</span> <span class="arrow">⬈</span></a>
+                        <a href="#"><span class="text">Contacto</span> <span class="arrow">⬈</span></a>
+                        <a href="#"><span class="text">Social media</span> <span class="arrow">⬈</span></a>
+                    </div>
+            </section>
+        </header>
+
+       <section class="portafolio">
+            <div class="projects">
+                <h2>Proyectos</h2>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80');"></div>
+                                <div class="project-content">
+                                    <h3>INSTITUTO <br>RESILIENCIA</h3>
+                                    <p>Officia sit numquam fugiat sint molestiae id. Est modi est at debitis dolorem...</p>
+                                    <button>View project</button>
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80');"></div>
+                                <div class="project-content">
+                                    <h3>Agenda-Cultural<br>BAM-BUAP</h3>
+                                    <p></p>
+                                    <button>View project</button>
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80');"></div>
+                                <div class="project-content">
+                                    <h3>Videojuego<br>"Nightmare"</h3>
+                                    <p>Officia sit numquam fugiat sint molestiae id. Est modi est at debitis dolorem...</p>
+                                    <button>View project</button>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+<!--
+        
+    <main>
+        
+        <section class="blog">
+        <h2>From the blog</h2>
+        <a href="#" class="view-all">View all blog posts</a>
+        <div class="blog-cards">
+            <div class="blog-card">
+            <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80');"></div>
+            <div class="blog-content">
+                <h4>2020-04-07-blog.pdf</h4>
+            </div>
+            </div>
+            <div class="blog-card">
+            <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80');"></div>
+            <div class="blog-content">
+                <h4>2020-04-06-blog.pdf</h4>
+            </div>
+            </div>
+        
+        
         </div>
-        <div class="project-card">
-          <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80');"></div>
-          <div class="project-content">
-            <h3>Dolorum Ullam Totam</h3>
-            <p>Consequatur consequatur et quisquam sit velit. Distinctio et sint omnis...</p>
-            <button>View project</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="blog">
-      <h2>From the blog</h2>
-      <a href="#" class="view-all">View all blog posts</a>
-      <div class="blog-cards">
-        <div class="blog-card">
-          <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80');"></div>
-          <div class="blog-content">
-            <h4>2020-04-07-blog.pdf</h4>
-          </div>
-        </div>
-        <div class="blog-card">
-          <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80');"></div>
-          <div class="blog-content">
-            <h4>2020-04-06-blog.pdf</h4>
-          </div>
-        </div>
-        <!-- Puedes agregar más blog-cards aquí -->
-      </div>
-    </section>
-    
-  </main>
-</body>
+        </section>
+
+    </main>
+    -->
+
+    </body>
 </html>
+        
+   
