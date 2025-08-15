@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /**class="Header*/
 
 .navbar {
@@ -102,8 +106,7 @@ header {
     top: 1.5rem;
     max-width: 1000px;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -121,7 +124,7 @@ header {
   background: #bdbdbd;
   border: 2px solid #111;
   box-shadow: 3px 3px 0 #222;
-  width: 800px;
+  width: 100%;
 }
 
 .indice-row a {
@@ -167,6 +170,7 @@ header {
   width: 100%;
   margin: auto;
   background-color: rgba(63, 63, 63, 0.164);
+  border-bottom: 2px solid #111;
 }
 
 .projects {
@@ -200,7 +204,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Oswald', sans-serif;
   width: 100%; 
 }
 
@@ -249,59 +253,167 @@ header {
   background: #e0e0e0;
 }
 
+/*Contact*/
 
-/*
-
-
-
-main {
-  padding: 2rem;
-}
-
-
-
-.blog {
-  margin-top: 3rem;
-}
-
-.view-all {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: #111;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.blog-cards {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.blog-card {
+.contact{
   background: #fff;
-  border: 3px solid #111;
-  border-radius: 8px;
-  width: 220px;
-  box-shadow: 4px 4px 0 #bbb;
-  overflow: hidden;
+  border-bottom: 2px solid #111;
+  padding: 1rem 0;
+  margin: auto;
+}
+
+.contact-me{
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-me h2{
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.compose-window {
+    border: 2px solid #111;
+    border-radius: 6px;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.521);
+    overflow: hidden;
+    display: flex;
+    padding-top: 0;
+    background-color:#e0e0e0;
+    margin: 20px auto;
+    flex-direction: column;
+}
+
+.header-mail {
+    background-color: #797979;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.close-btn {
+    background: rgb(255, 255, 255);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.from, .input-row {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.from label, .input-row label {
+    width: 60px;
+    font-weight: bold;
+}
+
+.input-row input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.cc-btn {
+    font-family: "Oswald", sans-serif;
+    margin-left: 5px;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.toolbar {
+    font-family: "Oswald", sans-serif;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.toolbar button {
+    margin-right: 4px;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.message-body {
+    font-family: "Oswald", sans-serif;
+    flex: 1;
+    padding: 4px;
+    width: 95%;
+    margin: 0 2.5%;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 200px;
+}
+
+.message-container{
+  flex: 1;
+  padding: 2px;
+  border: none;
+  outline: none;
+}
+
+.footer-mail {
+    
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+}
+
+.send-btn {
+    font-family: "Oswald", sans-serif;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #111;
+    padding: 6px 45px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.send-btn:hover  {
+    background-color: #000000;
+    color: white;
+}
+
+footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  background: #f6f6f6;
 }
 
-.blog-img {
-  height: 90px;
-  background-size: cover;
-  background-position: center;
-  border-bottom: 2px solid #111;
-}
-
-.blog-content {
-  padding: 0.7rem;
-}
-
-.blog-content h4 {
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
   margin: 0;
-  font-size: 1rem;
 }
-  */
+
+.icon-img-social {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.icon-img-social:hover {
+  transform: scale(1.1);
+}
